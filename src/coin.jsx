@@ -9,19 +9,19 @@ const Coin = ({
 }) => {
   const [show,setShow] =useState(true)
   return (
-    <div className='coin-container flex justify-end
+    <div className='coin-container 
     '>
-      <div className='flex flex-row items-center h-20'>
-        <div className='coin p-10 items-center flex flex-row '>
-          <img  className="h-10 flex flex-row " src={image} alt='crypto' />
-          <h1>{name}</h1>
+      <div className='flex flex-row items-center h-10'>
+        <div className='coin w-40 items-center flex flex-row p-12  '>
+          <img  className="h-6 flex flex-row " src={image} alt='crypto' />
+          <h1 className='text-xs'>{name}</h1>
         
         </div>
-        <div className='coin-data flex flex-row '>
-          <p className='coin-price flex items-center pr-6  '>Price:${price}</p>
+        <div className='coin-data flex flex-row  text-xs '>
+          <p className='coin-price flex items-center w-32 '>Price:${price}</p>
           
         
-<div className='price-change flex items-center pr-6  '>priceChange:
+<div className='price-change flex   '>PriceChange:
 
           {priceChange < 0 ? (
             <p className=' text-red-700'>{priceChange.toFixed(2)}%</p>
@@ -42,7 +42,7 @@ const Coin = ({
 
 
 
-//for loop(for Each or 4 loop) at index 10 i++ add hide class
+//for loop(forEach or 4 loop) at index 10, i++ add hide class
  // set interval function that add one and hides one 
  //needs to limit the  10 total
 
